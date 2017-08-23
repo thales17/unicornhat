@@ -21,26 +21,36 @@ colors = {
     'gray': {'r': 128, 'g': 128, 'b': 128},
 }
 
-pixels = [
-    {'x': 0, 'y': 0,  'color': 'red'},
-    {'x': 1, 'y': 0,  'color': 'green'},
-    {'x': 2, 'y': 0,  'color': 'blue'},
-    {'x': 3, 'y': 0,  'color': 'yellow'},
-    {'x': 4, 'y': 0,  'color': 'orange'},
-    {'x': 5, 'y': 0,  'color': 'purple'},
-    {'x': 6, 'y': 0,  'color': 'cyan'},
-    {'x': 7, 'y': 0,  'color': 'gray'},
-    
+patterns = [
+    [
+        {'x': 0, 'y': 7,  'color': 'blue'},
+        {'x': 1, 'y': 5,  'color': 'blue'},
+        {'x': 1, 'y': 6,  'color': 'blue'},
+        {'x': 2, 'y': 5,  'color': 'blue'},
+        {'x': 3, 'y': 5,  'color': 'blue'},
+        {'x': 4, 'y': 5,  'color': 'blue'},
+        {'x': 5, 'y': 5,  'color': 'blue'},
+        {'x': 6, 'y': 5,  'color': 'blue'},
+        {'x': 6, 'y': 6,  'color': 'blue'},
+        {'x': 7, 'y': 7,  'color': 'blue'},
+        {'x': 5, 'y': 4,  'color': 'blue'},
+        {'x': 5, 'y': 3,  'color': 'blue'},
+        {'x': 4, 'y': 2,  'color': 'blue'},
+        {'x': 3, 'y': 2,  'color': 'blue'},
+        {'x': 2, 'y': 3,  'color': 'blue'},
+        {'x': 2, 'y': 4,  'color': 'blue'},
+    ]
 ]
 
-for pixel in pixels:
-    unicorn.set_pixel(
-        pixel['x'],
-        pixel['y'],
-        colors[pixel['color']]['r'],
-        colors[pixel['color']]['g'],
-        colors[pixel['color']]['b']
-    )
+for pixels in patterns:
+    for pixel in pixels:
+        unicorn.set_pixel(
+            pixel['x'],
+            pixel['y'],
+            colors[pixel['color']]['r'],
+            colors[pixel['color']]['g'],
+            colors[pixel['color']]['b']
+        )
 
 unicorn.show()
-time.sleep(1)
+time.sleep(5)
