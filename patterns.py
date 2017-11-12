@@ -39,10 +39,44 @@ patterns = [
         {'x': 3, 'y': 2,  'color': 'blue'},
         {'x': 2, 'y': 3,  'color': 'blue'},
         {'x': 2, 'y': 4,  'color': 'blue'},
+    ],
+    [
+        {'x': 0, 'y': 2, 'color': 'green'},
+        {'x': 0, 'y': 3, 'color': 'green'},
+        {'x': 0, 'y': 4, 'color': 'green'},
+        {'x': 0, 'y': 5, 'color': 'green'},
+        {'x': 0, 'y': 6, 'color': 'green'},
+        {'x': 0, 'y': 7, 'color': 'green'},
+        {'x': 1, 'y': 2, 'color': 'green'},
+        {'x': 1, 'y': 5, 'color': 'green'},
+        {'x': 1, 'y': 7, 'color': 'green'},
+        {'x': 2, 'y': 2, 'color': 'green'},
+        {'x': 2, 'y': 5, 'color': 'green'},
+        {'x': 2, 'y': 7, 'color': 'green'},
+        {'x': 3, 'y': 2, 'color': 'green'},
+        {'x': 3, 'y': 5, 'color': 'green'},
+        {'x': 3, 'y': 7, 'color': 'green'},
+        {'x': 4, 'y': 2, 'color': 'green'},
+        {'x': 4, 'y': 5, 'color': 'green'},
+        {'x': 4, 'y': 7, 'color': 'green'},
+    ],
+    [
+        {'x': 1, 'y': 1, 'color': 'yellow'},
+        {'x': 1, 'y': 2, 'color': 'yellow'},
+        {'x': 1, 'y': 3, 'color': 'yellow'},
+        {'x': 1, 'y': 4, 'color': 'yellow'},
+        {'x': 1, 'y': 5, 'color': 'yellow'},
+        {'x': 1, 'y': 6, 'color': 'yellow'},
+        {'x': 1, 'y': 7, 'color': 'yellow'},
+        {'x': 2, 'y': 7, 'color': 'yellow'},
+        {'x': 3, 'y': 7, 'color': 'yellow'},
+        {'x': 4, 'y': 7, 'color': 'yellow'},
+        {'x': 5, 'y': 7, 'color': 'yellow'},
     ]
 ]
 
 for pixels in patterns:
+    unicorn.clear()
     for pixel in pixels:
         unicorn.set_pixel(
             pixel['x'],
@@ -51,6 +85,5 @@ for pixels in patterns:
             colors[pixel['color']]['g'],
             colors[pixel['color']]['b']
         )
-
-unicorn.show()
-time.sleep(5)
+    unicorn.show()
+    time.sleep(2)
