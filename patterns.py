@@ -72,6 +72,28 @@ patterns = [
         {'x': 3, 'y': 7, 'color': 'yellow'},
         {'x': 4, 'y': 7, 'color': 'yellow'},
         {'x': 5, 'y': 7, 'color': 'yellow'},
+    ],
+    [
+        {'x': 0, 'y': 2, 'color': 'blue'},
+        {'x': 0, 'y': 3, 'color': 'blue'},
+        {'x': 0, 'y': 4, 'color': 'blue'},
+        {'x': 1, 'y': 1, 'color': 'blue'},
+        {'x': 1, 'y': 5, 'color': 'blue'},
+        {'x': 2, 'y': 2, 'color': 'blue'},
+        {'x': 2, 'y': 6, 'color': 'blue'},
+        {'x': 3, 'y': 2, 'color': 'blue'},
+        {'x': 3, 'y': 6, 'color': 'blue'},
+        {'x': 4, 'y': 2, 'color': 'blue'},
+        {'x': 4, 'y': 6, 'color': 'blue'},
+        {'x': 5, 'y': 1, 'color': 'blue'},
+        {'x': 5, 'y': 6, 'color': 'blue'},
+        {'x': 6, 'y': 1, 'color': 'blue'},
+        {'x': 6, 'y': 6, 'color': 'blue'},
+        {'x': 7, 'y': 1, 'color': 'blue'},
+        {'x': 7, 'y': 2, 'color': 'blue'},
+        {'x': 7, 'y': 3, 'color': 'blue'},
+        {'x': 7, 'y': 4, 'color': 'blue'},
+        {'x': 7, 'y': 5, 'color': 'blue'},
     ]
 ]
 
